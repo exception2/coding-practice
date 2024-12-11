@@ -2,7 +2,7 @@ package arintra;
 
 import java.util.*;
 
-public class RandomSetImpl implements RandomSet {
+public class RandomSetImpl implements arintra.RandomSet {
 
     Map<Integer, Integer> mapSet;
     List<Integer> listSet;

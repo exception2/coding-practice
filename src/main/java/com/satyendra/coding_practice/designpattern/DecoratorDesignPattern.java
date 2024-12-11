@@ -1,4 +1,4 @@
-package designpattern;
+package com.satyendra.coding_practice.designpattern;
 
 interface Pizza {
     String description();

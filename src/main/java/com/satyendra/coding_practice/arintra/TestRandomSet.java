@@ -3,7 +3,7 @@ package arintra;
 public class TestRandomSet {
 
     public static void main(String[] args) {
-        RandomSet randomSet = new RandomSetImpl();
+        arintra.RandomSet randomSet = new arintra.RandomSetImpl();
         // test case 1
         randomSet.initialize();
         System.out.println(randomSet.insert(1));

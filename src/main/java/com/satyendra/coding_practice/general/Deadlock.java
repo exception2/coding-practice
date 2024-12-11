@@ -1,4 +1,4 @@
-package general;
+package com.satyendra.coding_practice.general;
 
 public class Deadlock {
     private static final Object lock1 = new Object();

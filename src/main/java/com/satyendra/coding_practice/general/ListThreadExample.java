@@ -1,4 +1,4 @@
-package general;
+package com.satyendra.coding_practice.general;
 
 import java.util.ArrayList;
 import java.util.List;

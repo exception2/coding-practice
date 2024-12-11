@@ -1,4 +1,4 @@
-package uber;
+package com.satyendra.coding_practice.uber;
 
 public class MatchNextCharacter {
     public static void main(String[] args) {

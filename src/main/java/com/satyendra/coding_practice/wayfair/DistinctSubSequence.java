@@ -1,4 +1,4 @@
-package wayfair;
+package com.satyendra.coding_practice.wayfair;
 
 import java.util.HashMap;
 import java.util.Map;

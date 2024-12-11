@@ -6,11 +6,14 @@ public class Anagram {
 
     public static void main(String[] args) {
         Anagram anagram = new Anagram();
-        /*List<String> words = new ArrayList<>(List.of("cat","act","allot","peach","cheap","dusty"));
+        List<String> words = new ArrayList<>(List.of("cat","act","allot","peach","cheap","dusty"));
         List<String> queries = new ArrayList<>(List.of("study","peahc","tac"));
-        System.out.println(solve(words, queries));*/
-        List<List<String>> list1 = anagram.groupAnagrams(new String[]{"eat","tea","tan","ate","nat","bat"});
-        System.out.println(list1);
+        System.out.println(solve(words, queries));
+        //List<List<String>> list1 = anagram.groupAnagrams(new String[]{"eat","tea","tan","ate","nat","bat"});
+        //System.out.println(list1);
+        List<String> words1 = new ArrayList<>(List.of("duel","speed","dule","cars"));
+        List<String> queries1 = new ArrayList<>(List.of("spede","deul"));
+        System.out.println(solve(words1, queries1));
     }
 
     private static List<List<String>> solve(List<String> words,List<String> queries){
@@ -37,18 +40,9 @@ public class Anagram {
     }
 
     private static String getHash(String word){
-        int map[]=new int[130];
-
-        Arrays.fill(map, 0);
-        for (int i = 0; i < word.length(); i++) {
-            map[word.charAt(i)]++;
-        }
-
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 130; i++) {
-            sb.append(map[i]).append("$");
-        }
-        return sb.toString();
+        char[] arr = word.toCharArray();
+        Arrays.sort(arr);
+        return new String(arr);
     }
 
     public List<List<String>> groupAnagrams(String[] strs) {

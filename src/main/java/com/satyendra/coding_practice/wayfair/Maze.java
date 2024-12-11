@@ -1,4 +1,4 @@
-package wayfair;
+package com.satyendra.coding_practice.wayfair;
 
 // https://leetcode.com/discuss/interview-question/algorithms/4418282/WayFair-Hackerrank-or-SSE-or-Dec-2023/
 import java.util.LinkedList;
